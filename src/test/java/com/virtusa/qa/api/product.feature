@@ -15,11 +15,11 @@ Feature: Testing all the product rest APIs
 		When method POST
 		Then status 200
 		
-	@deleteFeature	
-  Scenario: Delete the 3rd product from the product list
-		Given url 'http://10.62.125.4:8091/product/delete/3'
-		When method DELETE
-		Then status 200
+	#@deleteFeature	
+ # Scenario: Delete the 3rd product from the product list
+		#Given url 'http://10.62.125.4:8091/product/delete/3'
+		#When method DELETE
+		#Then status 200
 		
 	@editFeature
 	@regression

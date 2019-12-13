@@ -1,0 +1,86 @@
+19:03:08.678 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:03:09.889 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/product/list
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+19:03:10.608 [main] DEBUG com.intuit.karate - response time in milliseconds: 716.39
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 13 Dec 2019 13:33:10 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+[{"id":1,"version":0,"productId":"235268845711068308","description":"Spring Framework Guru Shirt","imageUrl":"https://springframework.guru/wp-content/uploads/2015/04/spring_framework_guru_shirt-rf412049699c14ba5b68bb1c09182bfa2_8nax2_512.jpg","price":18.95},{"id":2,"version":0,"productId":"168639393495335947","description":"Spring Framework Guru Mug","imageUrl":"https://springframework.guru/wp-content/uploads/2015/04/spring_framework_guru_coffee_mug-r11e7694903c348e1a667dfd2f1474d95_x7j54_8byvr_512.jpg","price":11.95}]
+
+19:03:10.629 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:03:10.650 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/product/add
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 90
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"description":"Pen","id":4,"imageUrl":"string","price":10,"productId":"arg1","version":1}
+
+19:03:10.775 [main] DEBUG com.intuit.karate - response time in milliseconds: 123.79
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 26
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Fri, 13 Dec 2019 13:33:10 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+Product saved successfully
+
+19:03:10.801 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:03:10.811 [main] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8080/product/delete/3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+19:03:10.849 [main] DEBUG com.intuit.karate - response time in milliseconds: 37.30
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 28
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Fri, 13 Dec 2019 13:33:10 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+Product deleted successfully
+
+19:03:10.864 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:03:10.871 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8080/product/update/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 253
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"id":1,"version":0,"productId":"235268845711068308","description":"Spring Framework Guru Shirt","imageUrl":"https://springframework.guru/wp-content/uploads/2015/04/spring_framework_guru_shirt-rf412049699c14ba5b68bb1c09182bfa2_8nax2_512.jpg","price":20}
+
+19:03:10.894 [main] DEBUG com.intuit.karate - response time in milliseconds: 21.73
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 28
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Fri, 13 Dec 2019 13:33:10 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+Product updated successfully
+

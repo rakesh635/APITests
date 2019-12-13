@@ -1,0 +1,23 @@
+19:03:10.864 karate.env system property was: null 
+19:03:10.871 request:
+1 > PUT http://localhost:8080/product/update/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 253
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"id":1,"version":0,"productId":"235268845711068308","description":"Spring Framework Guru Shirt","imageUrl":"https://springframework.guru/wp-content/uploads/2015/04/spring_framework_guru_shirt-rf412049699c14ba5b68bb1c09182bfa2_8nax2_512.jpg","price":20}
+
+19:03:10.894 response time in milliseconds: 21.73
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 28
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Fri, 13 Dec 2019 13:33:10 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+Product updated successfully
+
